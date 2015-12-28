@@ -1,0 +1,40 @@
+{
+  "name": "nutheory",
+  "version": "0.0.1",
+  "description": "Personal portfolio of Derek Rush",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "vinyl-paths": "^2.1.0"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.0",
+    "del": "^1.1.0",
+    "expect.js": "0.3.1",
+    "gulp": "3.9.0",
+    "gulp-changed": "^1.1.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sass": "2.1.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "jade": "1.9.2",
+    "node-bourbon": "^4.2.2",
+    "node-neat": "^1.7.1-beta1",
+    "node-sass": "3.4.2",
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.0.2",
+    "supertest": "0.8.2",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derek Rush",
+  "license": "ISC"
+}

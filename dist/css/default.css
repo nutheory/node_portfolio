@@ -1,0 +1,56 @@
+html {
+  background: url(../images/resume_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #737373; }
+
+#about {
+  position: relative;
+  left: 50%;
+  margin-top: 20%;
+  margin-right: -120px;
+  width: 30%; }
+
+#info_strip {
+  height: 240px;
+  width: 100%;
+  position: fixed;
+  top: 46%;
+  left: 0;
+  background-color: #fff; }
+  #info_strip #info_tech {
+    width: 80%;
+    margin: 20px auto 20px auto; }
+    #info_strip #info_tech #info_ruby {
+      width: 50%;
+      float: left; }
+      #info_strip #info_tech #info_ruby .logo {
+        background: url(../images/tech.png) no-repeat 0px 0;
+        background-size: 300px;
+        height: 200px;
+        width: 26%;
+        float: left; }
+      #info_strip #info_tech #info_ruby .info {
+        float: left;
+        width: 70%; }
+        #info_strip #info_tech #info_ruby .info h3 {
+          font-style: italic;
+          font-weight: bold; }
+    #info_strip #info_tech #info_node {
+      float: left;
+      width: 50%; }
+      #info_strip #info_tech #info_node .logo {
+        background: url(../images/tech.png) no-repeat -154px 0;
+        background-size: 300px;
+        height: 180px;
+        width: 26%;
+        float: left; }
+      #info_strip #info_tech #info_node .info {
+        float: left;
+        width: 70%; }
