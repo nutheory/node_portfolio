@@ -8,17 +8,48 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #737373; }
+  color: #737373;
+  font-family: 'Georgia Regular'; }
 
-#about {
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#main {
   position: relative;
-  left: 50%;
-  margin-top: 20%;
-  margin-right: -120px;
-  width: 30%; }
+  margin-top: 3%; }
+  #main a:link, #main a:active, #main a:hover, #main a:visited {
+    color: #762322; }
+  #main #title_nav {
+    position: absolute;
+    left: 50%;
+    margin-left: -520px;
+    width: 25%;
+    color: #762322;
+    background: url(../images/math.png) no-repeat;
+    background-size: 90px 90px;
+    background-position: right 0px; }
+    #main #title_nav h1 {
+      font-family: 'Georgia Italic';
+      font-style: italic;
+      margin-top: 0;
+      margin-bottom: 16px; }
+    #main #title_nav span {
+      font-weight: lighter; }
+    #main #title_nav ul {
+      font-size: 1.2em; }
+      #main #title_nav ul li {
+        float: left;
+        margin-right: 16px; }
+  #main #about {
+    position: absolute;
+    left: 50%;
+    margin-left: 120px;
+    width: 30%; }
 
 #info_strip {
-  height: 240px;
+  height: 200px;
   width: 100%;
   position: fixed;
   top: 46%;
@@ -41,12 +72,15 @@ body {
         width: 70%; }
         #info_strip #info_tech #info_ruby .info h3 {
           font-style: italic;
-          font-weight: bold; }
+          font-weight: bold;
+          margin: 10px 0 0 0; }
+        #info_strip #info_tech #info_ruby .info p {
+          margin: 0.5em 0; }
     #info_strip #info_tech #info_node {
       float: left;
       width: 50%; }
       #info_strip #info_tech #info_node .logo {
-        background: url(../images/tech.png) no-repeat -154px 0;
+        background: url(../images/tech.png) no-repeat -154px 0px;
         background-size: 300px;
         height: 180px;
         width: 26%;
@@ -54,3 +88,9 @@ body {
       #info_strip #info_tech #info_node .info {
         float: left;
         width: 70%; }
+        #info_strip #info_tech #info_node .info h3 {
+          font-style: italic;
+          font-weight: bold;
+          margin: 10px 0 0 0; }
+        #info_strip #info_tech #info_node .info p {
+          margin: 0.5em 0; }
