@@ -1,96 +1,244 @@
-html {
-  background: url(../images/resume_bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
 body {
   margin: 0;
   padding: 0;
-  color: #737373;
-  font-family: 'Georgia Regular'; }
+  color: #fff;
+  font-family: 'BentonSans','Helvetica Neue', 'Helvetica', 'Arial'; }
 
 ul, li, ol {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-#main {
-  position: relative;
-  margin-top: 3%; }
-  #main a:link, #main a:active, #main a:hover, #main a:visited {
-    color: #762322; }
-  #main #title_nav {
-    position: absolute;
-    left: 50%;
-    margin-left: -520px;
-    width: 25%;
-    color: #762322;
-    background: url(../images/math.png) no-repeat;
-    background-size: 90px 90px;
-    background-position: right 0px; }
-    #main #title_nav h1 {
-      font-family: 'Georgia Italic';
-      font-style: italic;
-      margin-top: 0;
-      margin-bottom: 16px; }
-    #main #title_nav span {
-      font-weight: lighter; }
-    #main #title_nav ul {
-      font-size: 1.2em; }
-      #main #title_nav ul li {
-        float: left;
-        margin-right: 16px; }
-  #main #about {
-    position: absolute;
-    left: 50%;
-    margin-left: 120px;
-    width: 30%; }
-
-#info_strip {
-  height: 200px;
-  width: 100%;
+aside#social {
+  width: 48px;
   position: fixed;
-  top: 46%;
-  left: 0;
-  background-color: #fff; }
-  #info_strip #info_tech {
-    width: 80%;
-    margin: 20px auto 20px auto; }
-    #info_strip #info_tech #info_ruby {
-      width: 50%;
-      float: left; }
-      #info_strip #info_tech #info_ruby .logo {
-        background: url(../images/tech.png) no-repeat 0px 0;
-        background-size: 300px;
-        height: 200px;
-        width: 26%;
+  color: #fff;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: #0b8793;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #0b8793 0%, #360033 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0b8793 0%, #360033 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0b8793 0%, #360033 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b8793', endColorstr='#360033',GradientType=0 );
+  /* IE6-9 */ }
+  aside#social a:link, aside#social a:active, aside#social a:visited {
+    color: rgba(255, 255, 255, 0.6); }
+  aside#social a:hover {
+    color: white; }
+  aside#social div {
+    width: 8px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 40px;
+    bottom: 0px;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(253, 253, 253, 0) 1%, #333333 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(253, 253, 253, 0) 1%, #333333 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(253, 253, 253, 0) 1%, #333333 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#333333',GradientType=1 );
+    /* IE6-9 */ }
+  aside#social ul {
+    margin-top: 40px; }
+    aside#social ul li {
+      padding: 0 8px 24px 12px; }
+
+#main-content {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 0 0 48px;
+  position: relative; }
+  #main-content a:link, #main-content a:active, #main-content a:hover, #main-content a:visited {
+    color: #762322; }
+  #main-content header {
+    height: 400px; }
+    #main-content header a:link, #main-content header a:active, #main-content header a:visited {
+      color: #fff; }
+    #main-content header #mini-header {
+      display: none;
+      position: fixed;
+      border-bottom: 1px solid #999;
+      background-color: rgba(255, 255, 255, 0.6);
+      width: 100%;
+      height: 60px; }
+      #main-content header #mini-header li {
         float: left; }
-      #info_strip #info_tech #info_ruby .info {
+    #main-content header nav {
+      border-bottom: 1px solid #999;
+      padding: 72px 10px 10px 10px;
+      margin: 0px 40px 20px 0px;
+      width: 40%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right; }
+      #main-content header nav li {
+        font-size: 2em;
+        font-weight: 400;
+        text-shadow: 2px 2px 2px #333;
         float: left;
-        width: 70%; }
-        #info_strip #info_tech #info_ruby .info h3 {
-          font-style: italic;
-          font-weight: bold;
-          margin: 10px 0 0 0; }
-        #info_strip #info_tech #info_ruby .info p {
-          margin: 0.5em 0; }
-    #info_strip #info_tech #info_node {
+        margin-left: 32px; }
+      #main-content header nav a:hover {
+        text-shadow: none;
+        color: #762322;
+        cursor: pointer;
+        text-decoration: none; }
+    #main-content header h2 {
+      clear: both;
+      padding: 10px;
+      margin: 0px 0 40px 40px;
+      text-shadow: 2px 2px 2px #333; }
+    #main-content header #logo {
+      border-bottom: 1px solid #999;
+      padding: 40px 10px 10px 10px;
+      margin: 0px 0 20px 40px;
+      font-weight: 200;
+      width: 40%;
+      color: #666; }
+      #main-content header #logo h3 {
+        font-weight: 200;
+        margin: 0;
+        font-style: italic; }
+      #main-content header #logo h3:last-child {
+        color: #762322;
+        font-size: 3em;
+        font-weight: 400;
+        font-style: normal; }
+      #main-content header #logo h2 {
+        font-weight: bold;
+        color: #fff; }
+  #main-content #tools {
+    overflow: auto;
+    padding: 20px 0 80px 0;
+    color: #000; }
+    #main-content #tools .icon-rails {
       float: left;
-      width: 50%; }
-      #info_strip #info_tech #info_node .logo {
-        background: url(../images/tech.png) no-repeat -154px 0px;
-        background-size: 300px;
-        height: 180px;
-        width: 26%;
-        float: left; }
-      #info_strip #info_tech #info_node .info {
+      background: url(../images/tech.png) no-repeat -12px 0;
+      width: 136px;
+      height: 200px;
+      background-size: 980px 160px; }
+    #main-content #tools .icon-node {
+      float: left;
+      background: url(../images/tech.png) no-repeat -150px 0;
+      width: 100px;
+      height: 200px;
+      background-size: 1000px 160px; }
+    #main-content #tools .icon-mongo {
+      float: left;
+      background: url(../images/tech.png) no-repeat -486px -8px;
+      width: 80px;
+      height: 70px;
+      background-size: 640px 96px; }
+    #main-content #tools .icon-postgres {
+      float: left;
+      background: url(../images/tech.png) no-repeat -160px -8px;
+      width: 80px;
+      height: 70px;
+      background-size: 640px 96px; }
+    #main-content #tools .icon-sass {
+      float: left;
+      background: url(../images/tech.png) no-repeat -320px -6px;
+      width: 80px;
+      height: 70px;
+      background-size: 640px 96px; }
+    #main-content #tools .icon-html {
+      float: left;
+      background: url(../images/tech.png) no-repeat -406px -6px;
+      width: 80px;
+      height: 70px;
+      background-size: 640px 96px; }
+    #main-content #tools .icon-github {
+      float: left;
+      background: url(../images/tech.png) no-repeat -564px -6px;
+      width: 80px;
+      height: 70px;
+      background-size: 640px 96px; }
+    #main-content #tools .icon-gulp {
+      float: left;
+      background: url(../images/tech.png) no-repeat -230px -6px;
+      width: 80px;
+      height: 70px;
+      background-size: 640px 96px; }
+    #main-content #tools h1 {
+      margin: 40px;
+      text-align: center;
+      font-weight: 200;
+      color: #000; }
+    #main-content #tools h3 {
+      padding-left: 120px;
+      font-weight: 200;
+      margin-bottom: 4px; }
+    #main-content #tools h4 {
+      font-weight: 200;
+      padding-left: 100px;
+      margin-bottom: 4px; }
+    #main-content #tools p {
+      padding-left: 100px;
+      font-weight: 200; }
+    #main-content #tools .top-center {
+      margin: 20px 40px 40px 40px;
+      overflow: auto; }
+      #main-content #tools .top-center .left-rails {
+        width: 47%;
+        padding-right: 20px; }
+      #main-content #tools .top-center .right-node {
+        width: 47%;
+        padding-left: 20px;
+        margin-left: 6%; }
+        #main-content #tools .top-center .right-node .icon-node {
+          float: left; }
+        #main-content #tools .top-center .right-node p {
+          padding-left: 120px; }
+    #main-content #tools ul {
+      margin: 40px; }
+      #main-content #tools ul li {
         float: left;
-        width: 70%; }
-        #info_strip #info_tech #info_node .info h3 {
-          font-style: italic;
-          font-weight: bold;
-          margin: 10px 0 0 0; }
-        #info_strip #info_tech #info_node .info p {
-          margin: 0.5em 0; }
+        width: 30%; }
+      #main-content #tools ul li:nth-child(2), #main-content #tools ul li:nth-child(5) {
+        margin: 0 5%; }
+  #main-content #about {
+    position: relative;
+    background: #333; }
+    #main-content #about #me {
+      position: absolute;
+      margin-left: -60px;
+      margin-top: -60px;
+      left: 50%;
+      z-index: 1000; }
+      #main-content #about #me img {
+        width: 120px;
+        height: 120px; }
+    #main-content #about .left-description {
+      margin: 80px 0 60px 40px;
+      max-width: 47%; }
+      #main-content #about .left-description h1 {
+        font-size: 4em;
+        font-weight: bold; }
+      #main-content #about .left-description p {
+        font-size: 3em;
+        line-height: 1.2em;
+        font-weight: bold; }
+    #main-content #about .right-history {
+      margin: 80px 40px 60px 6%;
+      width: 40%; }
+      #main-content #about .right-history h1 {
+        margin-top: 0; }
+      #main-content #about .right-history h3 {
+        font-weight: 200; }
+      #main-content #about .right-history p {
+        font-weight: 200; }
+  #main-content #projects .project-wrapper {
+    margin: 60px 40px;
+    font-weight: 200;
+    color: #000; }
+    #main-content #projects .project-wrapper h1, #main-content #projects .project-wrapper h3, #main-content #projects .project-wrapper p {
+      font-weight: 200; }
+  #main-content #contact {
+    height: 360px; }

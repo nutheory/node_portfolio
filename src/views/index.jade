@@ -3,71 +3,144 @@ html(lang='en')
   head
     title Derek Rush :: Resume
     meta(content="width=device-width, initial-scale=1.0", name="viewport")
-    link(rel="stylesheet", href="./css/default.css")
+    link(rel="stylesheet", href="bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/animate.css")
+    link(rel="stylesheet", href="css/default.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+    script(src="bootstrap/dist/js/bootstrap.min.js")  
+    script(src="js/parallax.min.js")
+    script(src="js/default.js")
+    
   body
-    #title_nav
-    #main
-      #title_nav
-        h1 NuTheory
-          br
-          span Portfolio of 
-          | Derek Rush
-        ul
-          li
-            a(href="") about
-          li
-            a(href="") my work
-          li
-            a(href="") experience
-          li
-            a(href="") contact
-              
-              
-      #about
-        | Highly motivated web application developer, and designer 
-        | with 9+ years of GUI experience and 6+ years working with Ruby on Rails
-        | and really intensive javascript/coffeescript.
-        | Proven leadership and work ethic. .
-        | Experienced in a start-up environment requiring self-motivation, 
-        | adaptability and leadership. 
-    #info_strip
-      #info_tech
-        #info_ruby
-          .logo
-          .info
-            h3 Ruby on Rails
-            p Ruby/Rails/Sinatra are a massive group of awesome tools.  
-            
-        #info_node
-          .logo
-          .info 
-            h3 Node and Javascript
-            p
-              | Very versed in JS, still learning most ES ideas and principles.
-              | Love the fast movement of JS concepts mixed with ES2015 forward 
-              | thinking, Googles V8 engine is a monster that needs to showcase 
-              | the future of the web and ideas like ES and shadow DOM.
-    #about_strip
-      .image
-      .info
-        h3 About Me
-        p
-          | Im a ambituous programmer with a strong sense of marketing. I have a huge 
-          | interest in the art of war time propaganda posters, as well as always 
-          | looking at new and and blossoming technologies.
-    #work_strip
-      
-    #experience_strip
+    aside#social
+      div
       ul
-        li Foldera
-          | 2000 - 2007 - UX Designer, Front end manager 
-        li Miio
-          | 2008-2009 - programmer for social startup experiment - built mostly in pure JS
-        li Kajabi
-          | 2010 - 2011 - short contract to get kajabis client theming to work 
-          | and bring old (legacy) clients into new theming concepts
-        li WR Studios
-          | 2011 - 2016 - Worked on flagship product CloudCMA, Created ipad version 
-          | of their CMA. Helped head new JS project to make small data requests to MLS systems.
-    #contact_strip
-      
+        li
+          a(href="linkedin.com/nutheory")
+            i.fa.fa-linkedin.fa-2x
+        li
+          a(href="github.com/nutheory")
+            i.fa.fa-github.fa-2x
+        li
+          a(href="skype:nutheory?chat")
+            i.fa.fa-skype.fa-2x
+        li
+          a(href="twitter.com/nutheory")
+            i.fa.fa-twitter.fa-2x
+    #main-content
+      header
+        #mini-header
+          .logo
+            h2.pull-left 
+              a(href="#main-content") Derek Rush
+            ul.pull-right
+              li
+                a(href="#tools") tools
+              li 
+                a(href="#about") about
+              li 
+                a(href="#projects") projects
+              li 
+                a(href="#contact") contact
+        #logo.col-sm-4.col-sm-offset-1.pull-left
+          h3 Welcome to the portfolio of 
+          h3 Derek Rush
+        nav.col-sm-4.pull-right
+          ul.pull-right
+            li
+              a(href="#tools") tools
+            li 
+              a(href="#about") about
+            li 
+              a(href="#projects") projects
+            li 
+              a(href="#contact") contact
+        h2.tagline.pull-left 
+          | Fullstack web development using
+          br
+          | Ruby on Rails and Node.js
+      #tools.fadeInUpBig
+        h1 My development toolset.
+        .top-center
+          .left-rails.pull-left 
+            .icon-rails
+            h3 Ruby on Rails
+            p Since building my first Rails application back in 2007 I have loved the
+              | beauty and simplicity of the Ruby language. One of my favorite features
+              | of Rails has to be size of its community thats builds gems and contributes
+              | to the Rails codebase itself. There seems to be a entire vibe that surrounds 
+              | open source.
+          .right-node.pull-right 
+            .icon-node
+            h3 Node.js
+            p Before Node.js even came around I was building full web applications 
+              | in pure JS. I really love working with JS because its blazingly
+              | fast, and lightweight. I also really enjoy working with architectures 
+              | centered around asynchronous JSON and small data end points. 
+            p As a matter of fact this site was built using Node.js, Express, and Gulp.
+        ul.minor-tools
+          li.mongo
+            .icon-mongo
+            h4 MongoDB  
+            p NoSQL document store, containing many different key-value pairs, or even nested documents.
+          li.github
+            .icon-github
+            h4 GitHub
+            p Collaboration, code review, and code management for open source and private projects.
+          li.sass
+            .icon-sass
+            h4 SASS
+            p SASS is an extension of CSS, adding nested rules, variables, mixins, and selector inheritance. 
+          li.postgres
+
+            .icon-postgres
+            h4 Postgres
+            p PostgreSQL is a powerful, open source object-relational database system.
+          li.gulp
+            .icon-gulp
+            h4 Gulp
+            p  Gulp is a streaming code-over-configuration build system for Node.js.
+          li.html
+            .icon-html
+            h4 HTML5, HAML and Jade
+            p Three ways to write structural markup for any interface.
+            
+      #about
+        #me
+          img(src="images/headshot.png", alt="Derek")
+        .left-description.pull-left
+          p I am a highly motivated web application developer, and designer 
+            | with 9+ years of GUI experience and 7+ years working with Ruby on Rails
+            | and really intensive javascript.
+        .right-history.pull-right
+          h1 History
+          ul
+            li 
+              h3 2011 - 2016: W&R Studios
+              p Over the span of several years I assisted in maintaining and launching 
+                | 4 SAAS projects on small agile team for the real estate industry. Most 
+                | recently creating a custom front-end framework to consume a Rails JSON API.
+            li
+              h3 2001 - 2007: Foldera
+              p Co-founded a software company that was aimed to improve project management
+                | and collaboration. My role was Lead Designer/Usability Engineer. 
+        div(style="clear:both")  
+      #projects
+        .project-wrapper
+          h1 Recent Projects
+          ul
+            li
+              h3 CloudMLX
+              img
+              p Built a front-end framework, to search MLS's through a natural language search
+                | feature. Using complex REGEX patterns we autocomplete to match records and 
+                | display results as the user types. We acheive this by leveraging the performance
+                | of JS's non blocking asynchronous nature for performance. Look for it soon.
+            li
+              h3 CloudCMA
+              img
+              p 
+                
+                a(href="http://blog.cloudcma.com/getting-the-most-from-cloud-cmas-whats-my-home-worth-lead-generating-landing-pages/") video
+      #contact
