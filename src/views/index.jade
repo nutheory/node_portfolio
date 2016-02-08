@@ -3,12 +3,12 @@ html(lang='en')
   head
     title Derek Rush :: Resume
     meta(content="width=device-width, initial-scale=1.0", name="viewport")
-    link(rel="stylesheet", href="bootstrap/dist/css/bootstrap.min.css")
+    //- link(rel="stylesheet", href="bootstrap/dist/css/bootstrap.min.css")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/animate.css")
     link(rel="stylesheet", href="css/default.css")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
-    script(src="bootstrap/dist/js/bootstrap.min.js")  
+    //- script(src="bootstrap/dist/js/bootstrap.min.js")  
     script(src="js/parallax.min.js")
     script(src="js/default.js")
     
@@ -17,53 +17,34 @@ html(lang='en')
       div
       ul
         li
-          a(href="//linkedin.com/in/nutheory" target="_blank")
+          a(href="//linkedin.com/in/nutheory", target="_blank")
             i.fa.fa-linkedin.fa-2x
         li
-          a(href="github.com/nutheory")
+          a(href="//github.com/nutheory", target="_blank")
             i.fa.fa-github.fa-2x
         li
           a(href="skype:nutheory?chat")
             i.fa.fa-skype.fa-2x
         li
-          a(href="twitter.com/nutheory")
+          a(href="//twitter.com/nutheory", target="_blank")
             i.fa.fa-twitter.fa-2x
     #main-content
       header
-        #mini-header
-          .logo
-            h2.pull-left 
-              a(href="#main-content") Derek Rush
-            ul.pull-right
-              li
-                a(href="#tools") tools
-              li 
-                a(href="#about") about
-              li 
-                a(href="#projects") projects
-              li 
-                a(href="#contact") contact
         #logo.col-sm-4.col-sm-offset-1.pull-left
           h3 Welcome to the portfolio of 
           h3 Derek Rush
         nav.col-sm-4.pull-right
-          ul.pull-right
-            li
-              a(href="#tools") tools
-            li 
-              a(href="#about") about
-            li 
-              a(href="#projects") projects
-            li 
-              a(href="#contact") contact
+          .actions.pull-right
+            a.button(href="resume.pdf") Resume
+            a.button(href="mailto:drush81@gmail.com") Contact
         h2.tagline.pull-left 
           | Fullstack web developer using
           br
           | Ruby and Javascript
-      #tools.fadeInUpBig
+      #tools
         h1 My development toolset.
         .top-center
-          .left-rails.pull-left 
+          .left-rails 
             .icon-rails
             h3 Ruby on Rails
             p Since building my first Rails application back in 2007 I have loved the
@@ -71,7 +52,7 @@ html(lang='en')
               | of Rails has to be size of its community thats builds gems and contributes
               | to the Rails codebase itself. There seems to be a entire vibe that surrounds 
               | open source.
-          .right-node.pull-right 
+          .right-node 
             .icon-node
             h3 Node.js
             p Before Node.js even came around I was building full web applications 
@@ -109,17 +90,17 @@ html(lang='en')
       #about
         #me
           img(src="images/headshot.png", alt="Derek")
-        .left-description.pull-left
+        .left-description
           p I am a highly motivated web application developer, and designer 
             | with 9+ years of GUI experience and 7+ years working with Ruby on Rails
             | and really intensive javascript.
-        .right-history.pull-right
+        .right-history
           h1 History
           ul
             li 
               h3 2011 - 2016: W&R Studios
               p Over the span of several years I assisted in maintaining and launching 
-                | 4 SAAS projects on a small agile team for the real estate industry. Most 
+                | 4 SAAS/Rails projects on a small agile team for the real estate industry. Most 
                 | recently creating a custom front-end framework to consume a Rails JSON API.
             li
               h3 2001 - 2007: Foldera
@@ -133,7 +114,8 @@ html(lang='en')
           | of two additional products with key innovations that separates us from the 
           | competition. Derek is a strong collaborator with fellow Teammates and has 
           | mentored new developers along the way. If you are considering adding to your Team 
-          | Derek is a proven asset every successful Company should have." ~ Gary McDaniel     
+          | Derek is a proven asset every successful Company should have." ~ Gary McDaniel - 
+          | Director of Member Services, W&R Studios     
       #projects
         .project-wrapper
           h1 Recent Projects
@@ -148,10 +130,22 @@ html(lang='en')
             li
               h3 CloudCMA
               img(src="images/cloud.png")
-              p My first project at W&R, I added many features, such as "Whats your home worth?", 
-              | or the iOS version of cloudCMA. I worked with every department to achieve this.
-              
+              p My first project at W&R, this is a online CMA geberator for real esate agents 
+                | I added many features, such as the "Whats your home worth?" lead capturer, 
+                | and the iPad version of cloudCMA. I was constantly working with every department 
+                | to achieve this.
               p
-                a(href="http://blog.cloudcma.com/getting-the-most-from-cloud-cmas-whats-my-home-worth-lead-generating-landing-pages/") Check it out!
+                a(href="http://blog.cloudcma.com/getting-the-most-from-cloud-cmas-whats-my-home-worth-lead-generating-landing-pages/" target="_blank") Check it out!
+            li
+              h3 Nudge
+              img(src="images/nudge.png")
+              p Nudge was a very simple email system to clients about changes in the real 
+                | estate market, tease upcoming listings or just send general digital 
+                | promotional flyers. I worked on all aspects of this project including building all 
+                | widget animations in javacript.
+              p
+                a(href="http://www.getnudgeapp.com/") Check it out!    
       #contact
-        //- input
+        .actions
+          a.button(href="resume.pdf") Resume
+          a.button(href="mailto:drush81@gmail.com") Contact
