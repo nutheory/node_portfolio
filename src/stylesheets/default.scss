@@ -2,6 +2,10 @@ html {
 
 }
 
+p{
+  margin-top: 4px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,23 +20,24 @@ ul, li, ol{
 }
 
 a:link, a:active, a:visited{
-  color: rgba(255, 255, 255, 0.6);
+  color: #ec528d;
+  text-decoration: none;
 }
 
 a:hover{
-  color: rgba(255, 255, 255, 1.0);
+  text-decoration: underline;
 }
 
 .actions{
   margin: 100px auto 0 auto;
 
-  .button {
+  .button:link, .button:active, .button:visited {
     background: #45B3F3;
     display: inline-block;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 60px;
     -webkit-box-shadow:    0 8px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
     -moz-box-shadow: 0 8px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
     box-shadow: 0 8px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
@@ -41,37 +46,32 @@ a:hover{
     -o-transition: -o-box-shadow .1s ease-in-out;
     transition: box-shadow .1s ease-in-out;
     font-size: 1.6em;
-    color: #fff;
+    color: rgba(22,66,129,0.8);
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+    text-decoration: none;
   }
 
   .button:hover {
     -webkit-box-shadow:    0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
     -moz-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
     box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
-  }
-
-  .button:active, .button:focus {
-      -webkit-box-shadow:    0 8px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
-      -moz-box-shadow: 0 8px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
-      box-shadow:    0 8px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
-  }
-
-  .button:active span {
-      -webkit-transform: translate(0, 4px);
-      -moz-transform: translate(0, 4px);
-      -o-transform: translate(0, 4px);
-      transform: translate(0, 4px);
+    color: rgba(22,66,129,0.8);
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
   }
 
   .button:last-child {
     background-color: #ec528d;
     margin-left: 40px;
+    color: rgba(150,40,82,0.8);
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
     -webkit-box-shadow:    0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
     -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
     box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
   }
 
   .button:last-child:hover {
+    color: rgba(150,40,82,0.8);
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
     -webkit-box-shadow:    0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
     -moz-box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
     box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
@@ -93,6 +93,16 @@ aside#social{
   background: linear-gradient(to bottom, #0b8793 0%,#360033 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b8793', endColorstr='#360033',GradientType=0 ); /* IE6-9 */
 
+  a:link, a:active, a:visited{
+    color: rgba(255,255,255, 0.6);
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: rgba(255,255,255, 1);
+    text-decoration: underline;
+  }
+
   div{
     width: 8px;
     height: 100%;
@@ -111,7 +121,7 @@ aside#social{
     margin-top: 40px;
 
     li{
-      padding: 0 8px 24px 12px;
+      padding: 0 8px 24px 8px;
     }
 
   }
@@ -125,26 +135,14 @@ aside#social{
   margin: 0 0 0 48px;
   position: relative;
 
-  a:link, a:active, a:hover, a:visited{
-    color: #762322;
-  }
-
   header{
     height:320px;
-
-    a:link, a:active, a:visited{
-      color: #fff;
-    }
-
-    a:hover{
-
-    }
 
     .actions{
       float: right;
       margin: 40px 40px 0 auto;
 
-      .button {
+      .button:link {
         font-size: 1em;
         padding: 10px;
         -webkit-box-shadow:    0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
@@ -182,29 +180,24 @@ aside#social{
     #logo{
       padding: 40px 10px 10px 10px;
       margin: 0px 0 20px 40px;
-      font-weight: 200;
       width:40%;
-      color:#666;
-
+      color:#fff;
+      text-shadow: 2px 2px 2px #333;
 
       h3{
-        font-weight: 200;
+        font-size: 1.6em;
         margin:0;
-        font-style: italic;
       }
 
       h3:last-child{
-        color: #762322;
-        font-size: 3em;
-        font-weight: 400;
-        font-style: normal;
+        font-size: 2.6em;
+        color: #ec528d;
       }
 
     }
     h2{
       font-weight: bold;
-      color: #fff;
-      font-size: 2.2em;
+      font-size: 2em;
       clear:both;
       padding: 10px;
       margin: 0px 0 40px 40px;
@@ -213,8 +206,6 @@ aside#social{
   }
 
   #tools{
-    // opacity: 0;
-    // display: none;
     overflow: auto;
     padding: 20px 0 80px 0;
     color:#000;
@@ -237,12 +228,12 @@ aside#social{
 
     h3{
       padding-left: 120px;
-      font-weight: 200;
+
       margin-bottom: 4px;
     }
 
     h4{
-      font-weight: 200;
+
       padding-left: 100px;
       margin-bottom: 4px;
     }
@@ -297,7 +288,7 @@ aside#social{
   #about{
     position: relative;
     background: #333;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     #me{
       position: absolute;
@@ -324,8 +315,8 @@ aside#social{
       }
 
       p{
-        font-size: 3em;
-        line-height: 1.2em;
+        font-size: 2.4em;
+        line-height: 1.4em;
         font-weight: bold;
         -webkit-margin-before: 0em;
       }
@@ -339,10 +330,11 @@ aside#social{
 
       h1{
         margin-top: 0;
+        font-weight: 200;
       }
 
-      h3{
-        font-weight: 200;
+      h4{
+        margin-bottom: 4px;
       }
 
       p{
@@ -353,29 +345,44 @@ aside#social{
 
     .testimonial{
       margin: 20px auto 40px auto;
-      width:80%;
+      width:50%;
       font-weight: 200;
       text-align: center;
-      font-size: 1.4em;
-    }
+      line-height: 1.6em;
+      clear:both;
 
+      span{
+        font-weight: bold;
+      }
+      span:before {
+        content: '\a';
+        white-space: pre;
+      }
+    }
   }
 
   #projects{
 
     .project-wrapper{
       margin: 60px 40px;
-      font-weight: 200;
       color: #000;
       overflow: auto;
 
-      h1, h3, p{
+      h1{
         font-weight: 200;
+      }
+
+      h3{
+        font-weight: bold;
+      }
+
+      p{
+
       }
     }
 
     li{
-      width: 27%;
+      width: 29%;
       border: 1px solid #999;
       -webkit-box-shadow: 3px 3px 5px #ccc;
       -moz-box-shadow:    3px 3px 5px #ccc;
@@ -390,7 +397,7 @@ aside#social{
     }
 
     li:nth-child(2), li:nth-child(5){
-      margin: 0 5%;
+      margin: 0 3%;
     }
 
   }
@@ -403,9 +410,6 @@ aside#social{
     .actions{
       margin: 100px auto 0 auto;
 
-      .button {
-        color: #fff;
-      }
     }
   }
 }
@@ -429,20 +433,15 @@ aside#social{
       #logo{
         padding: 20px 10px 0px 10px;
         margin: 0 0 0 20px;
-        font-weight: 200;
         width:50%;
-        color:#666;
 
         h3{
-          font-weight: 200;
           margin:0;
           font-style: italic;
         }
 
         h3:last-child{
-          color: #762322;
           font-size: 2em;
-          font-weight: 400;
           font-style: normal;
         }
       }
@@ -459,12 +458,12 @@ aside#social{
         overflow: auto;
         .left-rails{
           float:left;
-          width: 45%;
+          width: 44%;
         }
 
         .right-node{
           float:left;
-          width: 45%;
+          width: 44%;
           margin-left: 4%;
           .icon-node{
             float:left;
@@ -478,6 +477,7 @@ aside#social{
     #about{
       .left-description{
         font-size: 0.8em;
+        width:52%;
       }
       .right-history{
         p{
@@ -487,6 +487,7 @@ aside#social{
       .testimonial{
         font-size: 1.1em;
         line-height: 1.6em;
+        width:80%;
       }
     }
     #projects{
