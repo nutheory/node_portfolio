@@ -296,13 +296,13 @@ aside#social {
     #main-content #projects .project-wrapper h1, #main-content #projects .project-wrapper h3, #main-content #projects .project-wrapper p {
       font-weight: 200; }
   #main-content #projects li {
-    width: 29%;
+    width: 27%;
     border: 1px solid #999;
     -webkit-box-shadow: 3px 3px 5px #ccc;
     -moz-box-shadow: 3px 3px 5px #ccc;
     box-shadow: 3px 3px 5px #ccc;
     float: left;
-    padding: 0.4%; }
+    padding: 0 1%; }
     #main-content #projects li img {
       width: 100%;
       margin: 10px 0; }
@@ -371,7 +371,7 @@ aside#social {
     font-size: 1.1em;
     line-height: 1.6em; }
   #main-content #projects .project-wrapper li {
-    width: 30%; }
+    width: 29%; }
     #main-content #projects .project-wrapper li p {
       font-size: 0.8em; }
   #main-content #projects .project-wrapper li:nth-child(2), #main-content #projects .project-wrapper li:nth-child(5) {

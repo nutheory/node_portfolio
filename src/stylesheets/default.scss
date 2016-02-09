@@ -375,13 +375,13 @@ aside#social{
     }
 
     li{
-      width: 29%;
+      width: 27%;
       border: 1px solid #999;
       -webkit-box-shadow: 3px 3px 5px #ccc;
       -moz-box-shadow:    3px 3px 5px #ccc;
       box-shadow:         3px 3px 5px #ccc;
       float: left;
-      padding: 0.4%;
+      padding: 0 1%;
 
       img{
         width: 100%;
@@ -492,7 +492,7 @@ aside#social{
     #projects{
       .project-wrapper{
         li{
-          width:30%;
+          width:29%;
           p{
             font-size: 0.8em;
           }
