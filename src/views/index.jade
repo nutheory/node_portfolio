@@ -3,12 +3,10 @@ html(lang='en')
   head
     title Derek Rush :: Resume
     meta(content="width=device-width, initial-scale=1.0", name="viewport")
-    //- link(rel="stylesheet", href="bootstrap/dist/css/bootstrap.min.css")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/animate.css")
     link(rel="stylesheet", href="css/default.css")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
-    //- script(src="bootstrap/dist/js/bootstrap.min.js")  
     script(src="js/parallax.min.js")
     script(src="js/default.js")
     
@@ -30,14 +28,13 @@ html(lang='en')
             i.fa.fa-twitter.fa-2x
     #main-content
       header
-        #logo.col-sm-4.col-sm-offset-1.pull-left
+        .actions
+          a.button(href="resume.pdf") Resume
+          a.button(href="mailto:drush81@gmail.com") Contact
+        #logo
           h3 Welcome to the portfolio of 
           h3 Derek Rush
-        nav.col-sm-4.pull-right
-          .actions.pull-right
-            a.button(href="resume.pdf") Resume
-            a.button(href="mailto:drush81@gmail.com") Contact
-        h2.tagline.pull-left 
+        h2.tagline
           | Fullstack web developer using
           br
           | Ruby and Javascript
@@ -81,7 +78,7 @@ html(lang='en')
           li.gulp
             .icon-gulp
             h4 Gulp
-            p  Gulp is a streaming code-over-configuration build system for Node.js.
+            p Gulp is a streaming code-over-configuration build system for Node.js.
           li.html
             .icon-html
             h4 HTML5, HAML and Jade
@@ -124,27 +121,27 @@ html(lang='en')
               h3 CloudMLX
               img(src="images/cloud-mlx-logo.png")
               p Built a front-end framework, to search MLS's through a natural language search
-                | feature. Using complex REGEX patterns we autocomplete to match records and 
-                | display results as the user types. We acheive this by leveraging the performance
-                | of JS's non blocking asynchronous nature for performance. Look for it soon.
+                | feature. Using complex REGEX patterns we use autocomplete to match records and 
+                | display results as the user types. We achieve this by leveraging the performance
+                | of JS's non blocking asynchronous nature for performance which is able to query 
+                | Rails, localstorage and a ElasticSearch Server all at once. Look for it soon.
             li
               h3 CloudCMA
               img(src="images/cloud.png")
-              p My first project at W&R, this is a online CMA geberator for real esate agents 
-                | I added many features, such as the "Whats your home worth?" lead capturer, 
-                | and the iPad version of cloudCMA. I was constantly working with every department 
+              p My first project at W&R, this is a online CMA generator for real estate agents. 
+                | I was able to add many features over time, such as the "Whats your home worth?" 
+                | lead capturer, and the iPad version of cloudCMA. I was constantly working with every department 
                 | to achieve this.
               p
                 a(href="http://blog.cloudcma.com/getting-the-most-from-cloud-cmas-whats-my-home-worth-lead-generating-landing-pages/" target="_blank") Check it out!
             li
               h3 Nudge
               img(src="images/nudge.png")
-              p Nudge was a very simple email system to clients about changes in the real 
-                | estate market, tease upcoming listings or just send general digital 
-                | promotional flyers. I worked on all aspects of this project including building all 
-                | widget animations in javacript.
+              p Nudge was a very simple email alert system to notify clients about changes in the real 
+                | estate market, tease upcoming listings or just send general digital promotional flyers. 
+                | I worked on all aspects of this project including building all widget animations in javacript.
               p
-                a(href="http://www.getnudgeapp.com/") Check it out!    
+                a(href="http://www.getnudgeapp.com/" target="_blank") Check it out!    
       #contact
         .actions
           a.button(href="resume.pdf") Resume

@@ -23,7 +23,7 @@ a:hover {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     -webkit-box-shadow: 0 8px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0 8px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
     box-shadow: 0 8px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
@@ -31,7 +31,7 @@ a:hover {
     -moz-transition: -moz-box-shadow .1s ease-in-out;
     -o-transition: -o-box-shadow .1s ease-in-out;
     transition: box-shadow .1s ease-in-out;
-    font-size: 3em;
+    font-size: 1.6em;
     color: #fff; }
   .actions .button:hover {
     -webkit-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
@@ -103,10 +103,11 @@ aside#social {
   #main-content a:link, #main-content a:active, #main-content a:hover, #main-content a:visited {
     color: #762322; }
   #main-content header {
-    height: 400px; }
+    height: 320px; }
     #main-content header a:link, #main-content header a:active, #main-content header a:visited {
       color: #fff; }
     #main-content header .actions {
+      float: right;
       margin: 40px 40px 0 auto; }
       #main-content header .actions .button {
         font-size: 1em;
@@ -132,13 +133,7 @@ aside#social {
         -webkit-box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
         -moz-box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
         box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35); }
-    #main-content header h2 {
-      clear: both;
-      padding: 10px;
-      margin: 0px 0 40px 40px;
-      text-shadow: 2px 2px 2px #333; }
     #main-content header #logo {
-      border-bottom: 1px solid #999;
       padding: 40px 10px 10px 10px;
       margin: 0px 0 20px 40px;
       font-weight: 200;
@@ -153,9 +148,14 @@ aside#social {
         font-size: 3em;
         font-weight: 400;
         font-style: normal; }
-      #main-content header #logo h2 {
-        font-weight: bold;
-        color: #fff; }
+    #main-content header h2 {
+      font-weight: bold;
+      color: #fff;
+      font-size: 2.2em;
+      clear: both;
+      padding: 10px;
+      margin: 0px 0 40px 40px;
+      text-shadow: 2px 2px 2px #333; }
   #main-content #tools {
     overflow: auto;
     padding: 20px 0 80px 0;
@@ -310,19 +310,145 @@ aside#social {
     margin: 0 5%; }
   #main-content #contact {
     overflow: auto;
-    height: 360px;
+    height: 280px;
     text-align: center; }
     #main-content #contact .actions {
       margin: 100px auto 0 auto; }
       #main-content #contact .actions .button {
         color: #fff; }
 
-@media only screen and (max-device-width: 480px) {
-  h3 {
-    font-size: 0.6em; }
-  h2 {
-    font-size: 0.6em; }
+@media only screen and (max-width: 1160px) {
   #main-content header {
-    height: 200px; }
-    #main-content header h3 {
-      font-size: 0.6em; } }
+    height: 220px; }
+    #main-content header .actions {
+      float: right;
+      margin: 20px 20px 0 auto; }
+      #main-content header .actions .button {
+        font-size: 0.8em;
+        padding: 10px;
+        -webkit-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35); }
+    #main-content header #logo {
+      padding: 20px 10px 0px 10px;
+      margin: 0 0 0 20px;
+      font-weight: 200;
+      width: 50%;
+      color: #666; }
+      #main-content header #logo h3 {
+        font-weight: 200;
+        margin: 0;
+        font-style: italic; }
+      #main-content header #logo h3:last-child {
+        color: #762322;
+        font-size: 2em;
+        font-weight: 400;
+        font-style: normal; }
+    #main-content header h2 {
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.6em;
+      margin-left: 20px; }
+  #main-content #tools .top-center {
+    margin: 20px 40px 40px 40px;
+    overflow: auto; }
+    #main-content #tools .top-center .left-rails {
+      float: left;
+      width: 45%; }
+    #main-content #tools .top-center .right-node {
+      float: left;
+      width: 45%;
+      margin-left: 4%; }
+      #main-content #tools .top-center .right-node .icon-node {
+        float: left; }
+  #main-content #tools p {
+    font-size: 0.8em; }
+  #main-content #about .left-description {
+    font-size: 0.8em; }
+  #main-content #about .right-history p {
+    font-size: 0.8em; }
+  #main-content #about .testimonial {
+    font-size: 1.1em;
+    line-height: 1.6em; }
+  #main-content #projects .project-wrapper li {
+    width: 30%; }
+    #main-content #projects .project-wrapper li p {
+      font-size: 0.8em; }
+  #main-content #projects .project-wrapper li:nth-child(2), #main-content #projects .project-wrapper li:nth-child(5) {
+    margin: 0 3%; }
+  #main-content #contact {
+    height: 220px; }
+    #main-content #contact .actions {
+      margin-top: 100px; }
+      #main-content #contact .actions .button {
+        padding: 8px;
+        font-size: 1em; } }
+
+@media only screen and (max-width: 480px) {
+  #main-content header {
+    height: 120px;
+    background: #fff; }
+    #main-content header .actions .button {
+      padding: 4px; }
+    #main-content header h2.tagline {
+      margin: 0;
+      font-size: 1.2em; }
+    #main-content header #logo {
+      padding: 10px 0 0 0;
+      margin-left: 10px;
+      margin-bottom: 0;
+      border: 0; }
+      #main-content header #logo h3 {
+        font-size: 1em !important; }
+  #main-content #tools h1 {
+    margin: 10px;
+    font-size: 1.2em; }
+  #main-content #tools .top-center {
+    margin: 0; }
+    #main-content #tools .top-center .left-rails {
+      width: 62%; }
+    #main-content #tools .top-center h3 {
+      width: 100%; }
+    #main-content #tools .top-center p {
+      width: 100%;
+      font-size: 0.8em; }
+  #main-content #tools ul {
+    margin: 10px; }
+    #main-content #tools ul li {
+      float: left;
+      width: 90%;
+      clear: both; }
+      #main-content #tools ul li p {
+        font-size: 0.8em; }
+    #main-content #tools ul li:nth-child(2), #main-content #tools ul li:nth-child(5) {
+      margin: 0 0; }
+  #main-content #about .left-description {
+    max-width: 90%;
+    margin: 80px 10px 40px 10px; }
+    #main-content #about .left-description p {
+      font-size: 1.4em; }
+  #main-content #about .right-history {
+    width: 90%;
+    margin: 0px 10px 40px 10px; }
+    #main-content #about .right-history p {
+      font-size: 0.8em; }
+  #main-content #about .testimonial {
+    font-size: 0.8em; }
+  #main-content #projects .project-wrapper {
+    margin: 40px 10px; }
+    #main-content #projects .project-wrapper li {
+      width: 95%;
+      clear: both;
+      margin-top: 10px; }
+      #main-content #projects .project-wrapper li p {
+        font-size: 0.8em; }
+    #main-content #projects .project-wrapper li:nth-child(2), #main-content #projects .project-wrapper li:nth-child(5) {
+      margin: 10px 0 0 0; }
+  #main-content #contact {
+    background: #fff;
+    height: 100px; }
+    #main-content #contact .actions {
+      margin-top: 40px; }
+      #main-content #contact .actions .button {
+        padding: 4px;
+        font-size: 1em; } }
