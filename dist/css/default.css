@@ -327,7 +327,7 @@ aside#social {
     overflow: auto;
     text-align: center; }
     #main-content #contact .actions {
-      margin: 100px auto 0 auto; }
+      margin: 100px auto 100px auto; }
 
 @media only screen and (max-width: 1160px) {
   #main-content header {
