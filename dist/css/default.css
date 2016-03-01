@@ -110,90 +110,101 @@ aside#social {
   margin: 0 0 0 48px;
   position: relative; }
   #main-content header {
-    height: 320px; }
-    #main-content header .actions {
-      float: right;
-      margin: 40px 40px 0 auto; }
-      #main-content header .actions .button:link {
-        font-size: 1em;
-        padding: 10px;
-        -webkit-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
-        box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35); }
-      #main-content header .actions .button:hover {
-        -webkit-box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
-        box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35); }
-      #main-content header .actions .button:active, #main-content header .actions .button:focus {
-        -webkit-box-shadow: 0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, 0.3); }
-      #main-content header .actions .button:last-child {
-        background-color: #ec528d;
-        margin-left: 40px;
-        -webkit-box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
-        box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35); }
-      #main-content header .actions .button:last-child:hover {
-        -webkit-box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
-        box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35); }
-    #main-content header #logo {
-      padding: 40px 10px 10px 10px;
-      margin: 0px 0 20px 40px;
-      width: 40%;
-      color: #fff;
-      text-shadow: 2px 2px 2px #333; }
-      #main-content header #logo h3 {
-        font-size: 1.6em;
-        margin: 0; }
-      #main-content header #logo h3:last-child {
-        font-size: 2.6em;
-        color: #ec528d; }
-    #main-content header h2 {
-      font-weight: bold;
-      font-size: 2em;
-      clear: both;
-      padding: 10px;
-      margin: 0px 0 40px 40px;
-      text-shadow: 2px 2px 2px #333; }
+    overflow: auto; }
+    #main-content header .wrapper {
+      margin-bottom: 50px; }
+      #main-content header .wrapper .actions {
+        margin: 20px 0px 60px 52px; }
+        #main-content header .wrapper .actions .button:link {
+          font-size: 1em;
+          padding: 10px;
+          -webkit-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35); }
+        #main-content header .wrapper .actions .button:hover {
+          -webkit-box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35); }
+        #main-content header .wrapper .actions .button:active, #main-content header .wrapper .actions .button:focus {
+          -webkit-box-shadow: 0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, 0.3); }
+        #main-content header .wrapper .actions .button:last-child {
+          background-color: #ec528d;
+          margin-left: 40px;
+          -webkit-box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35); }
+        #main-content header .wrapper .actions .button:last-child:hover {
+          -webkit-box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, 0.35); }
+      #main-content header .wrapper .left {
+        float: left;
+        width: 60%; }
+        #main-content header .wrapper .left #logo {
+          padding: 40px 0px 10px 0px;
+          margin-bottom: 10px;
+          color: #fff;
+          text-shadow: 2px 2px 2px #333; }
+          #main-content header .wrapper .left #logo h3 {
+            font-size: 1.6em;
+            margin: 0 0 0 40px; }
+          #main-content header .wrapper .left #logo h3:last-child {
+            font-size: 2.6em;
+            color: #ec528d; }
+        #main-content header .wrapper .left h2 {
+          font-weight: bold;
+          font-size: 2em;
+          clear: both;
+          padding: 10px;
+          margin: 0 0 0 40px;
+          text-shadow: 2px 2px 2px #333; }
+      #main-content header .wrapper .right {
+        float: right;
+        margin-top: 40px;
+        width: 40%; }
+        #main-content header .wrapper .right #me {
+          text-align: center; }
+          #main-content header .wrapper .right #me img {
+            width: 260px;
+            height: 260px; }
   #main-content #tools {
-    overflow: auto;
-    padding: 20px 0 80px 0;
+    padding: 20px 0 20px 0;
     color: #000; }
     #main-content #tools .icon-rails {
       float: left;
-      background: url(../images/tech.png) no-repeat -12px 0;
-      width: 136px;
+      background: url(../images/tech.png) no-repeat 24px 0;
+      width: 168px;
       height: 200px;
-      background-size: 980px 160px; }
+      background-size: 1060px 160px; }
     #main-content #tools .icon-node {
       float: left;
-      background: url(../images/tech.png) no-repeat -150px 0;
+      background: url(../images/tech.png) no-repeat -140px 0;
       width: 100px;
       height: 200px;
-      background-size: 1000px 160px; }
+      background-size: 1080px 160px; }
     #main-content #tools .icon-mongo {
       float: left;
-      background: url(../images/tech.png) no-repeat -486px -8px;
+      background: url(../images/tech.png) no-repeat -460px -8px;
       width: 80px;
       height: 70px;
-      background-size: 640px 96px; }
+      background-size: 700px 96px; }
     #main-content #tools .icon-postgres {
       float: left;
-      background: url(../images/tech.png) no-repeat -160px -8px;
+      background: url(../images/tech.png) no-repeat -158px -8px;
       width: 80px;
       height: 70px;
-      background-size: 640px 96px; }
+      background-size: 700px 96px; }
     #main-content #tools .icon-sass {
       float: left;
-      background: url(../images/tech.png) no-repeat -320px -6px;
+      background: url(../images/tech.png) no-repeat -270px -6px;
       width: 80px;
       height: 70px;
       background-size: 640px 96px; }
     #main-content #tools .icon-html {
       float: left;
-      background: url(../images/tech.png) no-repeat -406px -6px;
+      background: url(../images/tech.png) no-repeat -350px -12px;
       width: 80px;
       height: 70px;
       background-size: 640px 96px; }
@@ -206,6 +217,12 @@ aside#social {
     #main-content #tools .icon-gulp {
       float: left;
       background: url(../images/tech.png) no-repeat -230px -6px;
+      width: 80px;
+      height: 70px;
+      background-size: 640px 96px; }
+    #main-content #tools .icon-toolbox {
+      float: left;
+      background: url(../images/tech.png) no-repeat -560px -6px;
       width: 80px;
       height: 70px;
       background-size: 640px 96px; }
@@ -239,26 +256,18 @@ aside#social {
           float: left; }
         #main-content #tools .top-center .right-node p {
           padding-left: 120px; }
-    #main-content #tools ul {
-      margin: 40px; }
-      #main-content #tools ul li {
+    #main-content #tools div.minor-tools {
+      margin: 40px;
+      overflow: auto; }
+      #main-content #tools div.minor-tools div.left, #main-content #tools div.minor-tools div.center, #main-content #tools div.minor-tools div.right {
         float: left;
         width: 30%; }
-      #main-content #tools ul li:nth-child(2), #main-content #tools ul li:nth-child(5) {
+      #main-content #tools div.minor-tools div.center {
         margin: 0 5%; }
   #main-content #about {
     position: relative;
     background: #333;
     padding-bottom: 20px; }
-    #main-content #about #me {
-      position: absolute;
-      margin-left: -60px;
-      margin-top: -60px;
-      left: 50%;
-      z-index: 1000; }
-      #main-content #about #me img {
-        width: 120px;
-        height: 120px; }
     #main-content #about .left-description {
       float: left;
       margin: 80px 0 20px 40px;
@@ -324,33 +333,32 @@ aside#social {
 
 @media only screen and (max-width: 1160px) {
   #main-content header {
-    height: 220px; }
-    #main-content header .actions {
-      float: right;
-      margin: 20px 20px 0 auto; }
-      #main-content header .actions .button {
-        font-size: 0.8em;
-        padding: 10px;
-        -webkit-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35);
-        box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, 0.35); }
-    #main-content header #logo {
+    overflow: auto; }
+    #main-content header .wrapper .right #me {
+      text-align: center; }
+      #main-content header .wrapper .right #me img {
+        width: 160px;
+        height: 160px; }
+    #main-content header .wrapper .left .actions {
+      margin: 20px 0px 40px 40px; }
+      #main-content header .wrapper .left .actions .button {
+        padding: 12px; }
+    #main-content header .wrapper .left #logo {
       padding: 20px 10px 0px 10px;
-      margin: 0 0 0 20px;
-      width: 50%; }
-      #main-content header #logo h3 {
-        margin: 0;
+      margin: 0; }
+      #main-content header .wrapper .left #logo h3 {
+        margin: 10px 0 0 20px;
         font-style: italic; }
-      #main-content header #logo h3:last-child {
+      #main-content header .wrapper .left #logo h3:last-child {
         font-size: 2em;
         font-style: normal; }
-    #main-content header h2 {
+    #main-content header .wrapper .left h2 {
       font-weight: bold;
       color: #fff;
       font-size: 1.6em;
       margin-left: 20px; }
   #main-content #tools .top-center {
-    margin: 20px 40px 40px 40px;
+    margin: 20px 20px 40px 0px;
     overflow: auto; }
     #main-content #tools .top-center .left-rails {
       float: left;
@@ -363,6 +371,9 @@ aside#social {
         float: left; }
   #main-content #tools p {
     font-size: 0.8em; }
+  #main-content #tools div.left, #main-content #tools div.center, #main-content #tools div.right {
+    display: block;
+    margin: 0px; }
   #main-content #about .left-description {
     font-size: 0.8em;
     width: 52%; }
@@ -378,29 +389,36 @@ aside#social {
       font-size: 0.8em; }
   #main-content #projects .project-wrapper li:nth-child(2), #main-content #projects .project-wrapper li:nth-child(5) {
     margin: 0 3%; }
-  #main-content #contact {
-    height: 220px; }
-    #main-content #contact .actions {
-      margin-top: 100px; }
-      #main-content #contact .actions .button {
-        padding: 8px;
-        font-size: 1em; } }
+  #main-content #contact .actions .button {
+    padding: 12px; } }
 
 @media only screen and (max-width: 480px) {
-  #main-content header {
-    height: 120px;
-    background: #fff; }
-    #main-content header .actions .button {
-      padding: 4px; }
-    #main-content header h2.tagline {
+  #main-content header .wrapper .right {
+    width: 100%;
+    display: block; }
+    #main-content header .wrapper .right #me {
+      text-align: center; }
+      #main-content header .wrapper .right #me img {
+        width: 120px;
+        height: 120px; }
+  #main-content header .wrapper .left {
+    width: 100%;
+    display: block; }
+    #main-content header .wrapper .left .actions {
+      width: 100%;
+      text-align: center; }
+      #main-content header .wrapper .left .actions .button {
+        padding: 12px; }
+    #main-content header .wrapper .left h2.tagline {
       margin: 0;
       font-size: 1.2em; }
-    #main-content header #logo {
+    #main-content header .wrapper .left #logo {
+      width: 100%;
       padding: 10px 0 0 0;
-      margin-left: 10px;
       margin-bottom: 0;
       border: 0; }
-      #main-content header #logo h3 {
+      #main-content header .wrapper .left #logo h3 {
+        margin-left: 10px;
         font-size: 1em !important; }
   #main-content #tools h1 {
     margin: 10px;
@@ -414,16 +432,10 @@ aside#social {
       width: 86%; }
     #main-content #tools .top-center p {
       font-size: 0.8em; }
-  #main-content #tools ul {
-    margin: 10px; }
-    #main-content #tools ul li {
-      float: left;
-      width: 90%;
-      clear: both; }
-      #main-content #tools ul li p {
-        font-size: 0.8em; }
-    #main-content #tools ul li:nth-child(2), #main-content #tools ul li:nth-child(5) {
-      margin: 0 0; }
+  #main-content #tools div.minor-tools div.left, #main-content #tools div.minor-tools div.center, #main-content #tools div.minor-tools div.right {
+    display: block;
+    width: 90%;
+    margin: 0 5%; }
   #main-content #about .left-description {
     width: 90%;
     margin: 80px 10px 40px 10px; }
@@ -446,11 +458,8 @@ aside#social {
         font-size: 0.8em; }
     #main-content #projects .project-wrapper li:nth-child(2), #main-content #projects .project-wrapper li:nth-child(5) {
       margin: 10px 0 0 0; }
-  #main-content #contact {
-    background: #fff;
-    height: 100px; }
-    #main-content #contact .actions {
-      margin-top: 40px; }
-      #main-content #contact .actions .button {
-        padding: 4px;
-        font-size: 1em; } }
+  #main-content #contact .actions {
+    margin: 60px 0; }
+    #main-content #contact .actions .button {
+      padding: 12px;
+      font-size: 1em; } }

@@ -1,7 +1,7 @@
 $(() => {
   $('header').parallax({
     imageSrc: '../images/resume_bg.jpg',
-    positionY: '-80px'
+    positionY: '-200px'
   })
 
   $('#contact').parallax({

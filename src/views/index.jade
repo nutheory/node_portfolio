@@ -28,16 +28,21 @@ html(lang='en')
             i.fa.fa-twitter.fa-2x
     #main-content
       header
-        .actions
-          a.button(href="resume.pdf") Resume
-          a.button(href="mailto:drush81@gmail.com") Contact
-        #logo
-          h3 Welcome to the portfolio of 
-          h3 Derek Rush
-        h2.tagline
-          | Fullstack web developer using
-          br
-          | Ruby and Javascript
+        .wrapper
+          .right
+            #me
+              img(src="images/headshot.png", alt="Derek")
+          .left
+            #logo
+              h3 Welcome to the portfolio of 
+              h3 Derek Rush
+            h2.tagline
+              | Fullstack web developer using
+              br
+              | Ruby and Javascript
+            .actions
+              a.button(href="resume.pdf") Resume
+              a.button(href="mailto:drush81@gmail.com") Contact
       #tools
         h1 My development toolset.
         .top-center
@@ -51,41 +56,41 @@ html(lang='en')
               | open source.
           .right-node 
             .icon-node
-            h3 Node.js
+            h3 Javascript, Coffeescript
             p Before Node.js even came around I was building full web applications 
               | in pure JS. I really love working with JS because its blazingly
               | fast, and lightweight. I also really enjoy working with architectures 
               | centered around asynchronous JSON and small data end points. 
             p Note that this site was built using Node.js, Express, and Gulp.
-        ul.minor-tools
-          li.mongo
-            .icon-mongo
-            h4 MongoDB  
-            p NoSQL document store, containing many different key-value pairs, or even nested documents.
-          li.github
-            .icon-github
-            h4 GitHub
-            p Collaboration, code review, and code management for open source and private projects.
-          li.sass
-            .icon-sass
-            h4 SASS
-            p SASS is an extension of CSS, adding nested rules, variables, mixins, and selector inheritance. 
-          li.postgres
-            .icon-postgres
-            h4 Postgres
-            p PostgreSQL is a powerful, open source object-relational database system.
-          li.gulp
-            .icon-gulp
-            h4 Gulp
-            p Gulp is a streaming code-over-configuration build system for Node.js.
-          li.html
-            .icon-html
-            h4 HTML5, HAML and Jade
-            p Three ways to write structural markup for any interface.
+        div.minor-tools
+          div.left
+            div.sass
+              .icon-sass
+              h4 CSS, SASS
+              p SASS is an extension of CSS, adding nested rules, variables, mixins, and selector inheritance. 
+            div.html
+              .icon-html
+              h4 HTML5, HAML and Jade
+              p Three ways to write structural markup for any interface.
+          div.center
+            div.postgres
+              .icon-postgres
+              h4 Postgres
+              p PostgreSQL is a powerful, open source object-relational database system.
+            div.mongo
+              .icon-mongo
+              h4 MongoDB  
+              p NoSQL document store, containing many different key-value pairs, or even nested documents.
+          div.right
+            div.toolbox
+              .icon-toolbox
+              h4 Toolbox without limits
+              p By no means am I limited to only what I have listed, I have a passion for learning new tech 
+                | and I am a firm believer in the right tool for the job. I love prototyping new ideas and
+                | exploring where things are headed. 
+
             
       #about
-        #me
-          img(src="images/headshot.png", alt="Derek")
         .left-description
           p I am a highly motivated web application developer, a designer with 
             | 9+ years of GUI experience, and have 7+ years working with Ruby on Rails.  

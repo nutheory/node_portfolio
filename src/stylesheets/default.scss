@@ -136,88 +136,104 @@ aside#social{
   position: relative;
 
   header{
-    height:320px;
+    overflow: auto;
+    .wrapper{
+      margin-bottom: 50px;
+      .actions{
+        margin: 20px 0px 60px 52px;
 
-    .actions{
-      float: right;
-      margin: 40px 40px 0 auto;
+        .button:link {
+          font-size: 1em;
+          padding: 10px;
+          -webkit-box-shadow:    0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+          -moz-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+          box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+        }
 
-      .button:link {
-        font-size: 1em;
-        padding: 10px;
-        -webkit-box-shadow:    0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
-        -moz-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
-        box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+        .button:hover {
+          -webkit-box-shadow:    0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+          -moz-box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+          box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+        }
+
+        .button:active, .button:focus {
+          -webkit-box-shadow:    0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
+          -moz-box-shadow: 0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
+          box-shadow:    0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
+        }
+
+        .button:last-child {
+          background-color: #ec528d;
+          margin-left: 40px;
+          -webkit-box-shadow:    0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+          -moz-box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+          box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+        }
+
+        .button:last-child:hover {
+          -webkit-box-shadow:    0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+          -moz-box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+          box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+        }
       }
+      .left{
+        float:left;
+        width:60%;
 
-      .button:hover {
-        -webkit-box-shadow:    0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
-        -moz-box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
-        box-shadow: 0 2px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+        #logo{
+          padding: 40px 0px 10px 0px;
+          margin-bottom:10px;
+          color:#fff;
+          text-shadow: 2px 2px 2px #333;
+
+          h3{
+            font-size: 1.6em;
+            margin:0 0 0 40px;
+          }
+
+          h3:last-child{
+            font-size: 2.6em;
+            color: #ec528d;
+          }
+
+        }
+        h2{
+          font-weight: bold;
+          font-size: 2em;
+          clear:both;
+          padding: 10px;
+          margin: 0 0 0 40px;
+          text-shadow: 2px 2px 2px #333;
+        }
       }
-
-      .button:active, .button:focus {
-        -webkit-box-shadow:    0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
-        -moz-box-shadow: 0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
-        box-shadow:    0 2px 0 #1D6AC8, 0 12px 10px rgba(0, 0, 0, .3);
+      .right{
+        float: right;
+        margin-top: 40px;
+        width:40%;
+        #me{
+          text-align: center;
+          img{
+            width: 260px;
+            height: 260px;
+          }
+        }
       }
-
-      .button:last-child {
-        background-color: #ec528d;
-        margin-left: 40px;
-        -webkit-box-shadow:    0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-        -moz-box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-        box-shadow: 0 4px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-      }
-
-      .button:last-child:hover {
-        -webkit-box-shadow:    0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-        -moz-box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-        box-shadow: 0 2px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-      }
-    }
-
-    #logo{
-      padding: 40px 10px 10px 10px;
-      margin: 0px 0 20px 40px;
-      width:40%;
-      color:#fff;
-      text-shadow: 2px 2px 2px #333;
-
-      h3{
-        font-size: 1.6em;
-        margin:0;
-      }
-
-      h3:last-child{
-        font-size: 2.6em;
-        color: #ec528d;
-      }
-
-    }
-    h2{
-      font-weight: bold;
-      font-size: 2em;
-      clear:both;
-      padding: 10px;
-      margin: 0px 0 40px 40px;
-      text-shadow: 2px 2px 2px #333;
     }
   }
 
   #tools{
-    overflow: auto;
-    padding: 20px 0 80px 0;
+    padding: 20px 0 20px 0;
     color:#000;
 
-    .icon-rails{float:left;background: url(../images/tech.png) no-repeat -12px 0;width:136px;height:200px;background-size: 980px 160px;}
-    .icon-node{float:left;background: url(../images/tech.png) no-repeat -150px 0;width:100px;height:200px;background-size: 1000px 160px;}
-    .icon-mongo{float:left;background: url(../images/tech.png) no-repeat -486px -8px;width:80px;height:70px;background-size: 640px 96px;}
-    .icon-postgres{float:left;background: url(../images/tech.png) no-repeat -160px -8px;width:80px;height:70px;background-size: 640px 96px;}
-    .icon-sass{float:left;background: url(../images/tech.png) no-repeat -320px -6px;width:80px;height:70px;background-size: 640px 96px;}
-    .icon-html{float:left;background: url(../images/tech.png) no-repeat -406px -6px;width:80px;height:70px;background-size: 640px 96px;}
+    .icon-rails{float:left;background: url(../images/tech.png) no-repeat 24px 0;width:168px;height:200px;background-size: 1060px 160px;}
+    .icon-node{float:left;background: url(../images/tech.png) no-repeat -140px 0;width:100px;height:200px;background-size: 1080px 160px;}
+    .icon-mongo{float:left;background: url(../images/tech.png) no-repeat -460px -8px;width:80px;height:70px;background-size: 700px 96px;}
+    .icon-postgres{float:left;background: url(../images/tech.png) no-repeat -158px -8px;width:80px;height:70px;background-size: 700px 96px;}
+    .icon-sass{float:left;background: url(../images/tech.png) no-repeat -270px -6px;width:80px;height:70px;background-size: 640px 96px;}
+    .icon-html{float:left;background: url(../images/tech.png) no-repeat -350px -12px;width:80px;height:70px;background-size: 640px 96px;}
     .icon-github{float:left;background: url(../images/tech.png) no-repeat -564px -6px;width:80px;height:70px;background-size: 640px 96px;}
     .icon-gulp{float:left;background: url(../images/tech.png) no-repeat -230px -6px;width:80px;height:70px;background-size: 640px 96px;}
+    .icon-toolbox{float:left;background: url(../images/tech.png) no-repeat -560px -6px;width:80px;height:70px;background-size: 640px 96px;}
 
     h1{
       margin: 40px;
@@ -269,18 +285,17 @@ aside#social{
 
     }
 
-    ul{
-      margin: 40px;
-
-      li{
+    div.minor-tools{
+      margin:40px;
+      overflow: auto;
+      div.left, div.center, div.right{
         float: left;
         width:30%;
       }
 
-      li:nth-child(2), li:nth-child(5){
+      div.center{
         margin: 0 5%;
       }
-
     }
 
   }
@@ -289,20 +304,6 @@ aside#social{
     position: relative;
     background: #333;
     padding-bottom: 20px;
-
-    #me{
-      position: absolute;
-      margin-left: -60px;
-      margin-top: -60px;
-      left: 50%;
-      z-index: 1000;
-
-      img{
-        width: 120px;
-        height: 120px;
-      }
-
-    }
 
     .left-description{
       float: left;
@@ -417,44 +418,53 @@ aside#social{
 @media only screen and (max-width: 1160px) {
   #main-content{
     header{
-      height:220px;
-      .actions{
-        float: right;
-        margin: 20px 20px 0 auto;
-
-        .button {
-          font-size: 0.8em;
-          padding: 10px;
-          -webkit-box-shadow:    0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
-          -moz-box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
-          box-shadow: 0 4px 0 #1D6AC8, 0 15px 20px rgba(0, 0, 0, .35);
+      overflow: auto;
+      .wrapper{
+        .right{
+          #me{
+            text-align: center;
+            img{
+              width: 160px;
+              height: 160px;
+            }
+          }
         }
-      }
-      #logo{
-        padding: 20px 10px 0px 10px;
-        margin: 0 0 0 20px;
-        width:50%;
+        .left{
+          .actions{
+            // display: block;
+            margin: 20px 0px 40px 40px;
 
-        h3{
-          margin:0;
-          font-style: italic;
-        }
+            .button {
+              padding: 12px;
 
-        h3:last-child{
-          font-size: 2em;
-          font-style: normal;
+            }
+          }
+          #logo{
+            padding: 20px 10px 0px 10px;
+            margin: 0;
+
+            h3{
+              margin:10px 0 0 20px;
+              font-style: italic;
+            }
+
+            h3:last-child{
+              font-size: 2em;
+              font-style: normal;
+            }
+          }
+          h2{
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.6em;
+            margin-left: 20px;
+          }
         }
-      }
-      h2{
-        font-weight: bold;
-        color: #fff;
-        font-size: 1.6em;
-        margin-left: 20px;
       }
     }
     #tools{
       .top-center{
-        margin: 20px 40px 40px 40px;
+        margin: 20px 20px 40px 0px;
         overflow: auto;
         .left-rails{
           float:left;
@@ -472,6 +482,10 @@ aside#social{
       }
       p{
         font-size: 0.8em;
+      }
+      div.left, div.center, div.right{
+        display: block;
+        margin:0px;
       }
     }
     #about{
@@ -504,13 +518,9 @@ aside#social{
       }
     }
     #contact{
-
-      height: 220px;
       .actions{
-        margin-top: 100px;
         .button {
-          padding: 8px;
-          font-size: 1em;
+          padding: 12px;
         }
       }
     }
@@ -521,24 +531,42 @@ aside#social{
 
   #main-content{
     header{
-      height:120px;
-      background: #fff;
-      .actions{
-        .button {
-          padding: 4px;
+      .wrapper{
+        .right{
+          width:100%;
+          display: block;
+          #me{
+            text-align: center;
+            img{
+              width: 120px;
+              height: 120px;
+            }
+          }
         }
-      }
-      h2.tagline{
-        margin:0;
-        font-size: 1.2em
-      }
-      #logo{
-        padding: 10px 0 0 0;
-        margin-left: 10px;
-        margin-bottom: 0;
-        border:0;
-        h3{
-          font-size: 1em !important;
+        .left{
+          width:100%;
+          display: block;
+          .actions{
+            width: 100%;
+            text-align: center;
+            .button {
+              padding: 12px;
+            }
+          }
+          h2.tagline{
+            margin:0;
+            font-size: 1.2em
+          }
+          #logo{
+            width:100%;
+            padding: 10px 0 0 0;
+            margin-bottom: 0;
+            border:0;
+            h3{
+              margin-left: 10px;
+              font-size: 1em !important;
+            }
+          }
         }
       }
     }
@@ -563,23 +591,13 @@ aside#social{
           font-size: 0.8em
         }
       }
-      ul{
-        margin: 10px;
+      div.minor-tools{
+        div.left, div.center, div.right{
+          display: block;
+          width: 90%;
 
-        li{
-          float: left;
-          width:90%;
-          clear:both;
-          p{
-            font-size: 0.8em
-          }
-
+          margin:0 5%;
         }
-
-        li:nth-child(2), li:nth-child(5){
-          margin: 0 0;
-        }
-
       }
     }
     #about{
@@ -618,12 +636,10 @@ aside#social{
       }
     }
     #contact{
-      background: #fff;
-      height: 100px;
       .actions{
-        margin-top: 40px;
+        margin: 60px 0;
         .button {
-          padding: 4px;
+          padding: 12px;
           font-size: 1em;
         }
       }
