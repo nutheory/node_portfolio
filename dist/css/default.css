@@ -114,7 +114,7 @@ aside#social {
     #main-content header .wrapper {
       margin-bottom: 50px; }
       #main-content header .wrapper .actions {
-        margin: 20px 0px 60px 52px; }
+        margin: 20px 0px 60px 42px; }
         #main-content header .wrapper .actions .button:link {
           font-size: 1em;
           padding: 10px;
@@ -157,7 +157,6 @@ aside#social {
           font-weight: bold;
           font-size: 2em;
           clear: both;
-          padding: 10px;
           margin: 0 0 0 40px;
           text-shadow: 2px 2px 2px #333; }
       #main-content header .wrapper .right {
@@ -326,7 +325,6 @@ aside#social {
     margin: 0 3%; }
   #main-content #contact {
     overflow: auto;
-    height: 280px;
     text-align: center; }
     #main-content #contact .actions {
       margin: 100px auto 0 auto; }
@@ -340,7 +338,7 @@ aside#social {
         width: 160px;
         height: 160px; }
     #main-content header .wrapper .left .actions {
-      margin: 20px 0px 40px 40px; }
+      margin: 20px 0px 40px 32px; }
       #main-content header .wrapper .left .actions .button {
         padding: 12px; }
     #main-content header .wrapper .left #logo {
@@ -356,7 +354,7 @@ aside#social {
       font-weight: bold;
       color: #fff;
       font-size: 1.6em;
-      margin-left: 20px; }
+      margin-left: 30px; }
   #main-content #tools .top-center {
     margin: 20px 20px 40px 0px;
     overflow: auto; }
@@ -406,11 +404,12 @@ aside#social {
     display: block; }
     #main-content header .wrapper .left .actions {
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      margin: 20px 0 40px 0; }
       #main-content header .wrapper .left .actions .button {
         padding: 12px; }
     #main-content header .wrapper .left h2.tagline {
-      margin: 0;
+      margin: 10px 0 0 10px;
       font-size: 1.2em; }
     #main-content header .wrapper .left #logo {
       width: 100%;

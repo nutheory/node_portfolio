@@ -140,7 +140,7 @@ aside#social{
     .wrapper{
       margin-bottom: 50px;
       .actions{
-        margin: 20px 0px 60px 52px;
+        margin: 20px 0px 60px 42px;
 
         .button:link {
           font-size: 1em;
@@ -201,7 +201,6 @@ aside#social{
           font-weight: bold;
           font-size: 2em;
           clear:both;
-          padding: 10px;
           margin: 0 0 0 40px;
           text-shadow: 2px 2px 2px #333;
         }
@@ -405,7 +404,6 @@ aside#social{
 
   #contact{
     overflow: auto;
-    height: 280px;
     text-align: center;
 
     .actions{
@@ -432,7 +430,7 @@ aside#social{
         .left{
           .actions{
             // display: block;
-            margin: 20px 0px 40px 40px;
+            margin: 20px 0px 40px 32px;
 
             .button {
               padding: 12px;
@@ -457,7 +455,7 @@ aside#social{
             font-weight: bold;
             color: #fff;
             font-size: 1.6em;
-            margin-left: 20px;
+            margin-left: 30px;
           }
         }
       }
@@ -549,12 +547,13 @@ aside#social{
           .actions{
             width: 100%;
             text-align: center;
+            margin:20px 0 40px 0;
             .button {
               padding: 12px;
             }
           }
           h2.tagline{
-            margin:0;
+            margin:10px 0 0 10px;
             font-size: 1.2em
           }
           #logo{
