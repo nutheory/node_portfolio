@@ -169,12 +169,12 @@ aside#social {
             width: 260px;
             height: 260px; }
   #main-content #tools {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     color: #000; }
     #main-content #tools .icon-rails {
       float: left;
-      background: url(../images/tech.png) no-repeat 24px 0;
-      width: 168px;
+      background: url(../images/tech.png) no-repeat 10px 0;
+      width: 154px;
       height: 200px;
       background-size: 1060px 160px; }
     #main-content #tools .icon-node {
