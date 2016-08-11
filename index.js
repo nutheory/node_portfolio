@@ -7,7 +7,6 @@ app.use(express.static(__dirname + '/dist'))
 app.use(express.static(__dirname + '/bower_components'))
 
 app.get('/', function(request, response) {
-
 })
 
 app.listen(app.get('port'), function() {
