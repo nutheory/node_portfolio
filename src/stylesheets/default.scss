@@ -497,7 +497,23 @@ aside#social{
             float:left;
           }
         }
+        .left-db{
+          float:left;
+          width: 44%;
+          padding-right: 20px;
+        }
+
+        .right-5-3{
+          float:left;
+          width: 44%;
+          padding-left: 20px;
+          margin-left: 4%;
+          .icon-5-3{
+            float:left;
+          }
+        }
       }
+
       p{
         font-size: 0.8em;
       }
@@ -601,6 +617,13 @@ aside#social{
           width: 100%;
         }
         .right-node{
+          width: 86%;
+        }
+        .left-db{
+          width: 100%;
+        }
+
+        .right-5-3{
           width: 86%;
         }
         h3{

@@ -354,6 +354,17 @@ aside#social {
       margin-left: 4%; }
       #main-content #tools .top-center .right-node .icon-node {
         float: left; }
+    #main-content #tools .top-center .left-db {
+      float: left;
+      width: 44%;
+      padding-right: 20px; }
+    #main-content #tools .top-center .right-5-3 {
+      float: left;
+      width: 44%;
+      padding-left: 20px;
+      margin-left: 4%; }
+      #main-content #tools .top-center .right-5-3 .icon-5-3 {
+        float: left; }
   #main-content #tools p {
     font-size: 0.8em; }
   #main-content #tools div.left, #main-content #tools div.center, #main-content #tools div.right {
@@ -415,6 +426,10 @@ aside#social {
     #main-content #tools .top-center .left-rails {
       width: 100%; }
     #main-content #tools .top-center .right-node {
+      width: 86%; }
+    #main-content #tools .top-center .left-db {
+      width: 100%; }
+    #main-content #tools .top-center .right-5-3 {
       width: 86%; }
     #main-content #tools .top-center p {
       font-size: 0.8em; }
