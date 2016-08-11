@@ -173,58 +173,28 @@ aside#social {
     color: #000; }
     #main-content #tools .icon-rails {
       float: left;
-      background: url(../images/tech.png) no-repeat 10px 0;
+      background: url(../images/tech_raw2@2x.png) no-repeat 10px 0;
       width: 154px;
       height: 200px;
-      background-size: 1060px 160px; }
+      background-size: 660px 160px; }
     #main-content #tools .icon-node {
       float: left;
-      background: url(../images/tech.png) no-repeat -140px 0;
-      width: 100px;
+      background: url(../images/tech_raw2@2x.png) no-repeat -190px 0;
+      width: 108px;
       height: 200px;
-      background-size: 1080px 160px; }
-    #main-content #tools .icon-mongo {
+      background-size: 680px 160px; }
+    #main-content #tools .icon-db {
       float: left;
-      background: url(../images/tech.png) no-repeat -460px -8px;
-      width: 80px;
-      height: 70px;
-      background-size: 700px 96px; }
-    #main-content #tools .icon-postgres {
+      background: url(../images/tech_raw2@2x.png) no-repeat -312px 0;
+      width: 154px;
+      height: 200px;
+      background-size: 660px 160px; }
+    #main-content #tools .icon-5-3 {
       float: left;
-      background: url(../images/tech.png) no-repeat -158px -8px;
-      width: 80px;
-      height: 70px;
-      background-size: 700px 96px; }
-    #main-content #tools .icon-sass {
-      float: left;
-      background: url(../images/tech.png) no-repeat -270px -6px;
-      width: 80px;
-      height: 70px;
-      background-size: 640px 96px; }
-    #main-content #tools .icon-html {
-      float: left;
-      background: url(../images/tech.png) no-repeat -350px -12px;
-      width: 80px;
-      height: 70px;
-      background-size: 640px 96px; }
-    #main-content #tools .icon-github {
-      float: left;
-      background: url(../images/tech.png) no-repeat -564px -6px;
-      width: 80px;
-      height: 70px;
-      background-size: 640px 96px; }
-    #main-content #tools .icon-gulp {
-      float: left;
-      background: url(../images/tech.png) no-repeat -230px -6px;
-      width: 80px;
-      height: 70px;
-      background-size: 640px 96px; }
-    #main-content #tools .icon-toolbox {
-      float: left;
-      background: url(../images/tech.png) no-repeat -560px -6px;
-      width: 80px;
-      height: 70px;
-      background-size: 640px 96px; }
+      background: url(../images/tech_raw2@2x.png) no-repeat -524px 0;
+      width: 110px;
+      height: 200px;
+      background-size: 660px 160px; }
     #main-content #tools h1 {
       margin: 40px;
       text-align: center;
@@ -253,16 +223,19 @@ aside#social {
         margin-left: 4%; }
         #main-content #tools .top-center .right-node .icon-node {
           float: left; }
-        #main-content #tools .top-center .right-node p {
-          padding-left: 120px; }
-    #main-content #tools div.minor-tools {
-      margin: 40px;
-      overflow: auto; }
-      #main-content #tools div.minor-tools div.left, #main-content #tools div.minor-tools div.center, #main-content #tools div.minor-tools div.right {
+      #main-content #tools .top-center .left-db {
         float: left;
-        width: 30%; }
-      #main-content #tools div.minor-tools div.center {
-        margin: 0 5%; }
+        width: 46%;
+        padding-right: 20px; }
+      #main-content #tools .top-center .right-5-3 {
+        float: left;
+        width: 46%;
+        padding-left: 20px;
+        margin-left: 4%; }
+        #main-content #tools .top-center .right-5-3 .icon-5-3 {
+          float: left; }
+      #main-content #tools .top-center p {
+        padding-left: 120px; }
   #main-content #about {
     position: relative;
     background: #333;
@@ -321,6 +294,20 @@ aside#social {
     #main-content #projects li img {
       width: 100%;
       margin: 10px 0; }
+    #main-content #projects li .award {
+      overflow: auto; }
+      #main-content #projects li .award .img {
+        float: left;
+        width: 80px;
+        height: 140px;
+        background: url(../images/award.png) no-repeat;
+        background-size: 80px 140px; }
+      #main-content #projects li .award .text {
+        float: left;
+        margin-top: 20px;
+        width: 220px; }
+        #main-content #projects li .award .text h2, #main-content #projects li .award .text h3 {
+          margin: 8px; }
   #main-content #projects li:nth-child(2), #main-content #projects li:nth-child(5) {
     margin: 0 3%; }
   #main-content #contact {

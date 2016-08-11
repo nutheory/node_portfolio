@@ -56,38 +56,26 @@ html(lang='en')
               | open source.
           .right-node 
             .icon-node
-            h3 Javascript, Coffeescript
+            h3 React, Redux, ES6, NPM and Node
             p Before Node.js even came around I was building full web applications 
-              | in pure JS. I really love working with JS because its blazingly
-              | fast, and lightweight. I also really enjoy working with architectures 
+              | in pure JS. I love the patterns and practices of React, but I dont mind going 
+              | outside of its boundries when needed. I also really enjoy working with architectures 
               | centered around asynchronous JSON and small data end points. 
-            p Note that this site was built using Node.js, Express, and Gulp.
-        div.minor-tools
-          div.left
-            div.sass
-              .icon-sass
-              h4 CSS, SASS
-              p SASS is an extension of CSS, adding nested rules, variables, mixins, and selector inheritance. 
-            div.html
-              .icon-html
-              h4 HTML5, HAML and Jade
-              p Three ways to write structural markup for any interface.
-          div.center
-            div.postgres
-              .icon-postgres
-              h4 Postgres
-              p PostgreSQL is a powerful, open source object-relational database system.
-            div.mongo
-              .icon-mongo
-              h4 MongoDB  
-              p NoSQL document store, containing many different key-value pairs, or even nested documents.
-          div.right
-            div.toolbox
-              .icon-toolbox
-              h4 Toolbox without limits
-              p By no means am I limited to only what I have listed, I have a passion for learning new tech 
-                | and I am a firm believer in the right tool for the job. I love prototyping new ideas and
-                | exploring where things are headed. 
+          .left-db
+            .icon-db
+            h3 Postgres and Mongo
+            p PostgreSQL is a powerful, open source object-relational database system and Mongo 
+              | is a NoSQL document store, containing many different key-value pairs, or even 
+              | nested documents. Two drastically different approaches to deal with data that each
+              | have their pros and cons. 
+      
+          .right-5-3 
+            .icon-5-3
+            h3 HTML and CSS
+            p Structural and stylistic scripting that each have very powerful features for everything 
+              | from canvas(drawing) to animations. The more we can move stuff like animations 
+              | to creative css and out of javascript is a huge win. It is stylistic after all.  
+         
 
             
       #about
@@ -99,7 +87,7 @@ html(lang='en')
           h1 History
           ul
             li 
-              h4 2011 - 2016: W&ampR Studios
+              h4 2011 - 2016: W+R Studios
               p Over the span of several years I assisted in maintaining and launching 
                 | 4 SAAS/Rails projects within a small, agile team for the real estate industry. Most 
                 | recently creating a custom front-end framework to consume a Rails JSON API.
@@ -128,9 +116,15 @@ html(lang='en')
                 | feature. Using complex REGEX patterns we use autocomplete to match records and 
                 | display results as the user enters search criteria. We achieve this by leveraging the performance
                 | of JS's non-blocking asynchronous nature for performance which is able to query 
-                | Rails, HTML5 localstorage, and a ElasticSearch Server all at once. This framework was 
-                | influenced by Rob Eisenbergs Aurelia, with only leveraging core concepts for loading 
-                | speed. Look for it soon.
+                | multiple data sources at once. Our very small team beat massive companies to win...
+              .award
+                .img
+                .text 
+                  a(href="http://www.inman.com/2016/08/05/inman-announces-2016-innovator-award-winners/" target="_blank") 
+                    h2 2016 
+                    h3 Inman Most Innovative Technology
+              p
+                a(href="http://cloudmlx.com" target="_blank") Check it out!
             li
               h3 CloudCMA
               img(src="images/cloud.png")
