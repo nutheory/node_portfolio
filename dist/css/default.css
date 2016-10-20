@@ -1,6 +1,10 @@
 p {
   margin-top: 4px; }
 
+blockquote {
+  font-style: italic;
+  font-size: 0.9em; }
+
 body {
   margin: 0;
   padding: 0;
@@ -162,13 +166,15 @@ aside#social {
           text-shadow: 2px 2px 2px #333; }
       #main-content header .wrapper .right {
         float: right;
-        margin-top: 40px;
+        margin-top: 34px;
         width: 40%; }
         #main-content header .wrapper .right #me {
           text-align: center; }
           #main-content header .wrapper .right #me img {
             width: 260px;
-            height: 260px; }
+            height: 260px;
+            border: 3px solid #fff;
+            border-radius: 134px; }
   #main-content #tools {
     padding: 20px 0;
     color: #000; }
@@ -249,7 +255,7 @@ aside#social {
         margin-top: 0;
         font-weight: 200; }
       #main-content #about .left-description h4 {
-        margin-bottom: 4px; }
+        margin-bottom: 8px; }
       #main-content #about .left-description p {
         font-weight: 200;
         line-height: 1.4em;
@@ -262,7 +268,7 @@ aside#social {
         margin-top: 0;
         font-weight: 200; }
       #main-content #about .right-history h4 {
-        margin-bottom: 4px; }
+        margin-bottom: 8px; }
       #main-content #about .right-history p {
         font-weight: 200;
         line-height: 1.4em; }
@@ -286,7 +292,7 @@ aside#social {
         font-weight: 200;
         color: #fff; }
       #main-content #projects .project-wrapper h3 {
-        font-weight: bold; }
+        font-weight: 400; }
     #main-content #projects li {
       width: 29%;
       background-image: linear-gradient(-135deg, #F9FCFD 0%, #F3F8F9 100%);
@@ -299,19 +305,22 @@ aside#social {
         width: 100%;
         margin: 10px 0; }
       #main-content #projects li .award {
-        overflow: auto; }
+        overflow: auto;
+        padding-bottom: 20px; }
         #main-content #projects li .award .img {
           float: left;
-          width: 80px;
-          height: 140px;
-          background: url(../images/award.png) no-repeat;
-          background-size: 80px 140px; }
+          width: 120px;
+          height: 120px;
+          overflow: auto;
+          background: url(../images/inman_seal.svg) no-repeat;
+          background-size: 120px 120px; }
         #main-content #projects li .award .text {
           float: left;
-          margin-top: 20px;
-          width: 220px; }
-          #main-content #projects li .award .text h2, #main-content #projects li .award .text h3 {
-            margin: 8px; }
+          margin-top: 8px;
+          margin-bottom: 10px;
+          width: 200px; }
+          #main-content #projects li .award .text h3, #main-content #projects li .award .text h4, #main-content #projects li .award .text p {
+            margin: 6px 0px 6px 12px; }
     #main-content #projects li:nth-child(2), #main-content #projects li:nth-child(5) {
       margin: 0 3%; }
   #main-content #contact {
@@ -385,6 +394,23 @@ aside#social {
     width: 80%; }
   #main-content #projects .project-wrapper li {
     width: 29%; }
+    #main-content #projects .project-wrapper li .award {
+      overflow: auto;
+      padding-bottom: 20px; }
+      #main-content #projects .project-wrapper li .award .img {
+        float: left;
+        width: 100px;
+        height: 100px;
+        overflow: auto;
+        background: url(../images/inman_seal.svg) no-repeat;
+        background-size: 100px 100px; }
+      #main-content #projects .project-wrapper li .award .text {
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        width: 140px; }
+        #main-content #projects .project-wrapper li .award .text h3, #main-content #projects .project-wrapper li .award .text h4, #main-content #projects .project-wrapper li .award .text p {
+          margin: 6px 12px; }
     #main-content #projects .project-wrapper li p {
       font-size: 0.8em; }
   #main-content #projects .project-wrapper li:nth-child(2), #main-content #projects .project-wrapper li:nth-child(5) {
