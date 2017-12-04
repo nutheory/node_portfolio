@@ -34,47 +34,57 @@ html(lang='en')
               h3 Welcome to the portfolio of 
               h3 Derek Rush
             h2.tagline
-              | Fullstack web developer using
+              | Fullstack developer using
               br
-              | Ruby, Node and React
+              | Node and React
             .actions
               a.button(href="resume.pdf" target="_blank") Resume
               a.button(href="mailto:drush@nutheory.com") Contact
       #tools
-        h1 My development toolset.
+        h1 development toolset.
         .top-center
-          .left-rails 
-            .icon-rails
-            h3 Ruby on Rails
-            p Since building my first Rails application back in 2007 I have loved the
-              | beauty and simplicity of the Ruby language. One of my favorite features
-              | of Rails has to be the size of its community. The Ruby gems and contributions
-              | from fellow Ruby developers can be leveraged for efficient application 
-              | development. 
-          .right-node 
-            .icon-node
-            h3 React, Redux, Webpack and Node
-            p Before Node's existence, I was building full web applications using
-              | pure JS. I love the patterns and practices of React, but I don't mind going 
-              | outside of its boundries when needed. The evolution of build systems has been a 
-              | fun adventure to follow, from Grunt... to Gulp... to Webpack. I also 
-              | enjoy working within a service oriented architecture that lends itself  
-              | to proper separation of concerns. I also love clean API's with well formed
-              | JSON responses. 
-              a(href="http://github.com/nutheory/node_portfolio/" target="_blank") View this porfolio on Github  
-          .left-db
-            .icon-db
-            h3 Postgres and Mongo
-            p PostgreSQL is a powerful, open source object-relational database system and Mongo 
-              | is a NoSQL document store, containing many different key-value pairs, or even 
-              | nested documents. Two drastically different approaches to deal with data, each
-              | with pros and cons.       
-          .right-5-3 
-            .icon-5-3
-            h3 HTML and CSS
-            p This is normally a "duh" section on a resume. But with the advancement of the 
-              | modern day browser, experience with things like complex HTML, CSS animations and
-              | flexbox layouts cannot be underestimated.
+          .row
+            .left 
+              .icon-node
+              .summary
+                h3 React, GraphQL, and Node 
+                  span (development)
+                p Since building my first Rails application back in 2007 I have loved the
+                  | beauty and simplicity of the Ruby language. One of my favorite features
+                  | of Rails has to be the size of its community. The Ruby gems and contributions
+                  | from fellow Ruby developers can be leveraged for efficient application 
+                  | development. 
+            .right 
+              .icon-jest
+              .summary  
+                h3 Jest, and Webpack 
+                  span (testing and bundling)
+                p Before Node's existence, I was building full web applications using
+                  | pure JS. I love the patterns and practices of React, but I don't mind going 
+                  | outside of its boundries when needed. The evolution of build systems has been a 
+                  | fun adventure to follow, from Grunt... to Gulp... to Webpack. I also 
+                  | enjoy working within a service oriented architecture that lends itself  
+                  | to proper separation of concerns. I also love clean API's with well formed
+                  | JSON responses. 
+                  a(href="http://github.com/nutheory/node_portfolio/" target="_blank") View this porfolio on Github  
+          .row  
+            .left
+              .icon-db
+              .summary
+                h3 Sequelize with Postgres and Mongo 
+                  span (databases)
+                p PostgreSQL is a powerful, open source object-relational database system and Mongo 
+                  | is a NoSQL document store, containing many different key-value pairs, or even 
+                  | nested documents. Two drastically different approaches to deal with data, each
+                  | with pros and cons.       
+            .right 
+              .icon-utils
+              .summary
+                h3 Git, Flow, and Ruby on Rails 
+                  span (utils and extra talents)
+                p This is normally a "duh" section on a resume. But with the advancement of the 
+                  | modern day browser, experience with things like complex HTML, CSS animations and
+                  | flexbox layouts cannot be underestimated.
 
             
       #about
@@ -135,49 +145,95 @@ html(lang='en')
       #projects
         .project-wrapper
           h1 Recent Projects
-          ul
-            li
-              h3 Cloud MLX
-              img(src="images/mlx.png")
-              p Built a front end framework to search MLS's through a natural language search
-                | feature. Using complex Regex patterns we use autocomplete to match records and 
-                | display results as the user enters search criteria. We achieve this by leveraging the performance
-                | of JS's non-blocking asynchronous nature, which is able to query 
-                | multiple data sources at once. Our very small team beat massive companies to win...
-              .award
-                a(href="http://www.inman.com/2016/08/05/inman-announces-2016-innovator-award-winners/" target="_blank")
-                  .img
-                .text 
-                  a(href="http://www.inman.com/2016/08/05/inman-announces-2016-innovator-award-winners/" target="_blank") 
-                    h3 2016 
-                    h4 Inman Most Innovative Technology
-                  p
-                    a(href="http://cloudmlx.com" target="_blank") www.cloudmlx.com
-            li
-              h3 Cloud CMA
-              img(src="images/cloud.png")
-              p My first project at W+R Studios was an online comparative market analysis (CMA) report 
-                | generator for real estate agents. My first big edit was to rewrite all prototype.js code in jQuery.
-                | I was able to add many features over time, such as the "Whats your home worth?" 
-                | lead capturer and the very experimental bookmarklet which would generate CMA's through our API
-                | from other MLS systems results (this feature eventually got rolled into MLX). I also built 
-                | the iPad version of Cloud CMA.  
-              p
-                a(href="http://blog.cloudcma.com/getting-the-most-from-cloud-cmas-whats-my-home-worth-lead-generating-landing-pages/" target="_blank") www.cloudcma.com 
-            li
-              h3 Cloud Streams
-              img(src="images/streams.png")
-              p Cloud Streams delivers property alerts via email or SMS in lightning speed. 
-                | The app allows real estate agents or their clients to set the criteria 
-                | for homes they’re interested in being notified about.
-                | One of the many awesome features about this application is it’s  
-                a(href="http://blog.cloudcma.com/listings-alerts-on-all-major-portals-pretty-much-suck/" target="_blank") performance
-                | . Cloud Streams alerts were proven to be sent out faster than Zillow, Redfin, 
-                | Realtor.com and many more. This was due to leveraging the power of 
-                | Elasticsearch and delivery services like Twilio and SendGrid.
-              p
-                a(href="http://www.cloudstreams.net/" target="_blank") www.cloudstreams.net 
+          div.project-list-row
+            div.proj-col
+              div.proj
+                h3 
+                  a(href="http://homefilming.com" target="_blank") Homefilming
+                img(src="images/homefilming.jpg")
+                p Created this online service to facilitate real estate agents being able to order
+                  | aerial photographs and videos of properties for marketing residential homes. 
+                  | Basically this service acts as a job board for licensed drone pilots to find local filming 
+                  | opportunities for fast cash do what they love. This site was built with Node and React, and powered 
+                  | by GraphQL and PostgreSQL. 
+                p This project also takes full advantange of some great API's to handle 
+                  | a lot of heavy lifting like video transcoding, payment processing and file storage.
+                .actions
+                  a.button.green(href="#") Coming Soon...
+                  //- a.button.green(href="http://homefilming.com" target="_blank") homefilming.com
+            div.proj-col
+              div.proj
+                h3 
+                  a(href="http://cloudmlx.com" target="_blank") Cloud MLX
+                img(src="images/mlx.jpg")
+                p Built a front end framework to search MLS's through a natural language search
+                  | feature. Using complex Regex patterns we use autocomplete to match records and 
+                  | display results as the user enters search criteria. We achieve this by leveraging the performance
+                  | of JS's non-blocking asynchronous nature, which is able to query 
+                  | multiple data sources at once. Our very small team beat massive companies to win.
+                .award
+                  a(href="http://www.inman.com/2016/08/05/inman-announces-2016-innovator-award-winners/" target="_blank")
+                    .img
+                  .text 
+                    a(href="http://www.inman.com/2016/08/05/inman-announces-2016-innovator-award-winners/" target="_blank") 
+                      h3 2016 
+                      h4 Inman Most Innovative Technology
+                .actions
+                  a.button.green(href="http://cloudmlx.com" target="_blank") cloudmlx.com
+            div.proj-col
+              div.proj
+                h3 
+                  a(href="http://thebrainfactory.com" target="_blank") The Brain Factory
+                img(src="images/brain.jpg")
+                p The Brain Factory specializes in immersive entertainment, and is the company responsible for the 
+                  | Haunters documentary. Nothing that comes out of the Brain Factory is quite what you expect, 
+                  | from horror and VR, to 3D and publishing, its all high octane fun. 
+                .actions
+                  a.button.green(href="http://thebrainfactory.com" target="_blank") thebrainfactory.com
+          div.project-list-row
+            div.proj-col
+              div.proj
+                h3
+                  a(href="http://hauntersmovie.com" target="_blank") Haunters
+                img(src="images/haunters.jpg")
+                p This fun little project was a simple promotional website for a recently released documentary named "Haunters: 
+                  | The Art of the Scare". The main objective of this site was to keep fans of extreme haunts up to 
+                  | date on events and news surrounding all things horror. Check this movie out if you 
+                  | get the opportunity. 
+                .actions
+                  a.button.green(href="http://hauntersmovie.com" target="_blank") hauntersmovie.com
+            div.proj-col
+              div.proj
+                h3
+                  a(href="http://cloudcma.com" target="_blank") Cloud CMA
+                img(src="images/cloud.png")
+                p My first project at W+R Studios was an online comparative market analysis (CMA) report 
+                  | generator for real estate agents. My first big edit was to rewrite all prototype.js code in jQuery.
+                  | I was able to add many features over time, such as the "Whats your home worth?" 
+                  | lead capturer and the very experimental bookmarklet which would generate CMA's through our API
+                  | from other MLS systems results (this feature eventually got rolled into MLX). I also built 
+                  | the iPad version of Cloud CMA.
+                p
+                  a(href="http://blog.cloudcma.com/getting-the-most-from-cloud-cmas-whats-my-home-worth-lead-generating-landing-pages/" target="_blank") Blog: Whats your home worth  
+                .actions
+                  a.button.green(href="http://blog.cloudcma.com/getting-the-most-from-cloud-cmas-whats-my-home-worth-lead-generating-landing-pages/" target="_blank") cloudcma.com
+            div.proj-col
+              div.proj
+                h3 
+                  a(href="http://www.cloudstreams.net/" target="_blank") Cloud Streams
+                img(src="images/streams.png")
+                p Cloud Streams delivers property alerts via email or SMS in lightning speed. 
+                  | The app allows real estate agents or their clients to set the criteria for homes they’re 
+                  | interested in being notified about. One of the many awesome features about this application 
+                  | is it’s 
+                  a(href="http://blog.cloudcma.com/listings-alerts-on-all-major-portals-pretty-much-suck/" target="_blank") performance
+                  | . Cloud Streams alerts were proven to be sent out faster than Zillow, Redfin, 
+                  | Realtor.com and many more. This was due to leveraging the power of Elasticsearch and delivery 
+                  | services like Twilio and SendGrid.    
+                .actions
+                  a.button.green(href="http://www.cloudstreams.net/" target="_blank") cloudstreams.net 
+                  
       #contact
         .actions
           a.button(href="resume.pdf" target="_blank") Resume
-          a.button(href="mailto:drush@nutheory.com") Contact
+          a.button.pink(href="mailto:drush@nutheory.com") Contact    
